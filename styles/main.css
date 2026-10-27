@@ -10,7 +10,6 @@
   --btn-text: var(--bg-main);
   --btn-hover: var(--accent);
 
-  /* Fonts */
   --font-sans: 'Inter', sans-serif;
   --font-serif: 'Playfair Display', serif;
 }
@@ -30,6 +29,21 @@ h1, h2, h3, h4, h5, h6,
   max-width: 1450px;
   padding-inline: 60px;
   margin: auto;
+}
+
+.title--secondary {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--accent-gold);
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+.title--second {
+  font-size: 30px;
+  line-height: 1.2;
+  color: var(--accent);
+  margin-bottom: 60px;
+  text-wrap: balance;
 }
 
 .header {
@@ -77,6 +91,14 @@ h1, h2, h3, h4, h5, h6,
   display: flex;
   align-items: center;
 
+  .hero__title--l {
+    font-size: 44px;
+    line-height: 1.2;
+    color: var(--accent);
+    margin-bottom: 24px;
+    text-wrap: balance;
+  }
+
   .hero__content {
     display: flex;
     align-items: center;
@@ -93,7 +115,7 @@ h1, h2, h3, h4, h5, h6,
     display: flex;
     justify-content: center;
 
-    img {
+    .hero__img {
       width: 100%;
       max-height: 500px;
       object-fit: cover;
@@ -102,28 +124,20 @@ h1, h2, h3, h4, h5, h6,
     }
   }
 
-  .hero__title--s {
-    font-size: 16px;
-    font-weight: 500;
-    color: var(--accent-gold);
-    margin-bottom: 16px;
-    letter-spacing: 0.5px;
-  }
-
-  .hero__title--l {
-    font-size: 44px;
-    line-height: 1.2;
-    color: var(--accent);
-    margin-bottom: 24px;
-    text-wrap: balance;
-  }
-
   .hero__text {
     font-size: 18px;
     color: var(--text-muted);
     opacity: 0.85;
     margin-bottom: 48px;
     text-wrap: balance;
+  }
+
+  .hero__img {
+    transition: 0.3s;
+
+    &:hover {
+      transform: scaleY(1.06);
+    }
   }
 
   .hero__button {
@@ -143,28 +157,83 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
-.how__works {
-  padding-block: 100px;
+.events {
+  margin-block: 120px;
+  padding-bottom: 60px;
 
-  .how__works__title--s {
-    font-size: 16px;
-    font-weight: 500;
-    color: var(--accent-gold);
-    margin-bottom: 1px;
-    letter-spacing: 0.5px;
+  .events__content__title {
     text-align: center;
   }
 
-  .how__works__title--m {
-    font-size: 38px;
+  .events__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+    padding-top: 60px;
+  }
+  
+  .events__item {
+    flex-basis: content;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 360px;
+    height: 360px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
     text-align: center;
-    color: var(--accent);
-    margin-bottom: 50px;
+    border-radius: 24px;
+    gap: 20px;
+    transition: 0.3s;
+
+    &:hover {
+      scale: 1.01;
+    }
+  }
+
+  .events__item:nth-child(1) {
+    background-image: url("../images/01-botanical-wax-seal.png");
+  }
+
+  .events__item:nth-child(2) {
+    background-image: url("../images/02-birthday-cake.png");
+  } 
+
+  .events__item:nth-child(3) {
+    background-image: url("../images/03-communion-card.png");
+  }  
+
+  .events__item:nth-child(4) {
+    background-image: url("../images/04-baby-balloons.png");
+  }  
+
+  .events__item:nth-child(5) {
+    background-image: url("../images/05-black-gold-invitation.png");
+  }  
+
+  .events__item:nth-child(6) {
+    background-image: url("../images/06-botanical-ribbon-card.png");
+  }  
+}
+
+.how__works {
+  padding-block: 100px;
+  text-align: center;
+
+  .how__works__title {
+    text-align: center;
   }
 
   .how__works__items {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
   }
 
