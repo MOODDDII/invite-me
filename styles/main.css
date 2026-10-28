@@ -26,8 +26,8 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .container {
-  max-width: 1450px;
-  padding-inline: 60px;
+  max-width: 1320px;
+  padding-inline: clamp(20px, 4vw, 60px);
   margin: auto;
 }
 
@@ -38,6 +38,7 @@ h1, h2, h3, h4, h5, h6,
   margin-bottom: 16px;
   letter-spacing: 0.5px;
 }
+
 .title--second {
   font-size: 30px;
   line-height: 1.2;
@@ -87,7 +88,7 @@ h1, h2, h3, h4, h5, h6,
 
 .hero {
   min-height: calc(100dvh - 80px);
-  padding-block: 80px;
+  padding-block: 80px 90px;
   display: flex;
   align-items: center;
 
@@ -102,12 +103,15 @@ h1, h2, h3, h4, h5, h6,
   .hero__content {
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: clamp(32px, 4vw, 60px);
     width: 100%;
   }
 
   .hero__left {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .hero__right {
@@ -128,8 +132,9 @@ h1, h2, h3, h4, h5, h6,
     font-size: 18px;
     color: var(--text-muted);
     opacity: 0.85;
-    margin-bottom: 48px;
+    margin-bottom: 32px;
     text-wrap: balance;
+    max-width: 60ch;
   }
 
   .hero__img {
@@ -158,8 +163,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .events {
-  margin-block: 120px;
-  padding-bottom: 60px;
+  margin-block: 80px 100px;
 
   .events__content__title {
     text-align: center;
@@ -171,16 +175,15 @@ h1, h2, h3, h4, h5, h6,
     justify-content: center;
     align-items: center;
     width: 100%;
-    gap: 40px;
-    padding-top: 60px;
+    gap: 28px 32px;
+    padding-top: 44px;
   }
-  
+
   .events__item {
+    position: relative;
     flex-basis: content;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 360px;
-    height: 360px;
+    width: min(100%, 420px);
+    height: 280px;
     aspect-ratio: 1 / 1;
     display: flex;
     flex-direction: column;
@@ -190,11 +193,34 @@ h1, h2, h3, h4, h5, h6,
     text-align: center;
     border-radius: 24px;
     gap: 20px;
-    transition: 0.3s;
+    overflow: hidden;
+    border: 1px solid rgba(44, 26, 26, 0.08);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     &:hover {
-      scale: 1.01;
+      transform: translateY(-4px);
+      box-shadow: 0 18px 32px rgba(44, 26, 26, 0.08);
     }
+  }
+
+  .events__wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.12);
+    transition: transform 0.35s ease;
+  }
+
+  .events__item:hover .events__wrapper {
+    transform: scale(1.08);
   }
 
   .events__item:nth-child(1) {
@@ -203,27 +229,27 @@ h1, h2, h3, h4, h5, h6,
 
   .events__item:nth-child(2) {
     background-image: url("../images/02-birthday-cake.png");
-  } 
+  }
 
   .events__item:nth-child(3) {
     background-image: url("../images/03-communion-card.png");
-  }  
+  }
 
   .events__item:nth-child(4) {
     background-image: url("../images/04-baby-balloons.png");
-  }  
+  }
 
   .events__item:nth-child(5) {
     background-image: url("../images/05-black-gold-invitation.png");
-  }  
+  }
 
   .events__item:nth-child(6) {
     background-image: url("../images/06-botanical-ribbon-card.png");
-  }  
+  }
 }
 
 .how__works {
-  padding-block: 100px;
+  padding-block: 90px 120px;
   text-align: center;
 
   .how__works__title {
@@ -234,7 +260,8 @@ h1, h2, h3, h4, h5, h6,
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 24px 30px;
+    padding-top: 42px;
   }
 
   .how__works__item {
@@ -243,7 +270,7 @@ h1, h2, h3, h4, h5, h6,
     border-radius: 24px;
     transition: 0.3s ease;
     border: 1px solid rgba(44, 26, 26, 0.04);
-    width: 400px;
+    width: min(100%, 360px);
 
     &:hover {
       transform: translateY(-4px);
