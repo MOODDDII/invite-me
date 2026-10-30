@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6,
   font-size: 30px;
   line-height: 1.2;
   color: var(--accent);
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   text-wrap: balance;
 }
 
@@ -88,7 +88,6 @@ h1, h2, h3, h4, h5, h6,
 
 .hero {
   min-height: calc(100dvh - 80px);
-  padding-block: 80px 90px;
   display: flex;
   align-items: center;
 
@@ -163,8 +162,6 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .events {
-  margin-block: 80px 100px;
-
   .events__content__title {
     text-align: center;
   }
@@ -176,7 +173,6 @@ h1, h2, h3, h4, h5, h6,
     align-items: center;
     width: 100%;
     gap: 28px 32px;
-    padding-top: 44px;
   }
 
   .events__item {
@@ -213,10 +209,25 @@ h1, h2, h3, h4, h5, h6,
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 12px;
+    gap: 50px;
     padding: 24px;
-    background: rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.2);
     transition: transform 0.35s ease;
+  }
+
+  .events__item__title {
+    color: var(--text-main);
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-wrap: balance;
+  }
+
+  .events__item__text {
+    color: var(--text-main);
+    font-size: 15px;
+    line-height: 1.6;
+    text-wrap: balance;
   }
 
   .events__item:hover .events__wrapper {
@@ -249,7 +260,6 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .how__works {
-  padding-block: 90px 120px;
   text-align: center;
 
   .how__works__title {
@@ -261,7 +271,6 @@ h1, h2, h3, h4, h5, h6,
     justify-content: center;
     flex-wrap: wrap;
     gap: 24px 30px;
-    padding-top: 42px;
   }
 
   .how__works__item {
@@ -304,4 +313,70 @@ h1, h2, h3, h4, h5, h6,
     line-height: 1.5;
     text-wrap: balance;
   }
+}
+
+.benefits {
+  .benefits__content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .benefits__item {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .benefits__img {
+    width: 40px;
+    height: 40px;
+    color: var(--accent);
+  }
+
+  .benefits__item:nth-child(even) .benefits__img {
+    color: var(--accent-gold);
+  }
+
+  .benefits__text {
+    line-height: 60px;
+    font-size: 30px;
+    color: var(--text-muted);
+  }
+}
+
+.footer {
+  background-color: var(--text-main);
+  color: var(--bg-main);
+  padding-block: 80px;
+
+  .footer__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .footer__link {
+    position: relative;
+  }
+
+  .footer__link::after {
+    position: absolute;
+    left: 0px;
+    bottom: -12px;
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: var(--bg-main);
+    transition: 0.3s;
+  }
+
+  .footer__link:hover::after {
+    width: 100%;
+  }
+}
+
+section .hero, .events, .how__works, .benefits {
+  margin-bottom: 280px;
 }
