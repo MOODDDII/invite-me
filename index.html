@@ -4,21 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cyfrowe zaproszenia od zera</title>
-    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- STYLES -->
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
   </head>
   <body>
     <header class="header">
       <div class="header__content container">
         <a href="/"><span class="header__logo">Invite me</span></a>
+
+        <input type="checkbox" id="nav-toggle" class="header__toggle" aria-label="Menu" />
+        <label for="nav-toggle" class="header__burger"><span></span></label>
 
         <div class="header__menu">
           <div class="hader__nav">
@@ -27,7 +29,7 @@
                 <a class="header__link" href="#">Wydarzenia</a>
               </li>
               <li>
-                <a class="header__link" href="#">Jak to działa</a></li>
+                <a class="header__link" href="#">Jak to działa</a>
               </li>
               <li>
                 <a class="header__link" href="#">Dlaczego warto</a>
