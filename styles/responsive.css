@@ -179,32 +179,6 @@
     margin-bottom: 110px;
   }
 
-  .events {
-    .events__items {
-      gap: 20px;
-    }
-
-    .events__item {
-      flex: 1 1 100%;
-      width: 100%;
-      aspect-ratio: auto;
-      height: 240px;
-    }
-
-    .events__wrapper {
-      gap: 24px;
-      padding: 16px;
-    }
-
-    .events__item__title {
-      font-size: 24px;
-    }
-
-    .events__item__text {
-      font-size: 14px;
-    }
-  }
-
   .how__works {
     .how__works__item {
       padding: 28px;
