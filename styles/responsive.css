@@ -173,7 +173,6 @@
   }
 
   .hero,
-  .events,
   .how__works,
   .benefits {
     margin-bottom: 110px;
@@ -264,20 +263,9 @@
   }
 
   .hero,
-  .events,
   .how__works,
   .benefits {
     margin-bottom: 80px;
-  }
-
-  .events {
-    .events__item {
-      height: 220px;
-    }
-
-    .events__item__title {
-      font-size: 22px;
-    }
   }
 
   .how__works {

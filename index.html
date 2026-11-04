@@ -67,8 +67,16 @@
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/responsive.css" />
+
+    <!-- Splide Slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
       <div class="header__content container">
         <a href="/"
@@ -109,6 +117,7 @@
       </div>
     </header>
 
+    <!-- Hero -->
     <section class="hero container">
       <div class="hero__content">
         <div class="hero__left">
@@ -133,65 +142,40 @@
       </div>
     </section>
 
-    <section class="events container">
-      <div class="events__content">
-        <h6 class="title--secondary events__content__title">Wydarzenia</h6>
-        <h2 class="title--second events__content__title">
-          Zaproszenie, które pasuje do charakteru twojej uroczystości
-        </h2>
+    <!-- Examples -->
+    <section class="examples container">
+      <h6 class="title--secondary">Wydarzenia</h6>
+      <h2 class="title--second">
+        Zaproszenie, które pasuje do charakteru twojej uroczystości
+      </h2>
 
-        <div class="events__items">
-          <div class="events__item">
-            <img
-              class="events__image"
-              src="./images/event-1.jpg"
-              alt="Event 1"
-            />
-          </div>
-
-          <div class="events__item">
-            <img
-              class="events__image"
-              src="./images/event-2.jpg"
-              alt="Event 2"
-            />
-          </div>
-
-          <div class="events__item">
-            <img
-              class="events__image"
-              src="./images/event-3.jpg"
-              alt="Event 3"
-            />
-          </div>
-
-          <div class="events__item">
-            <img
-              class="events__image"
-              src="./images/event-4.jpg"
-              alt="Event 4"
-            />
-          </div>
-
-          <div class="events__item">
-            <img
-              class="events__image"
-              src="./images/event-5.jpg"
-              alt="Event 5"
-            />
-          </div>
-
-          <div class="events__item">
-            <img
-              class="events__image"
-              src="./images/event-6.jpg"
-              alt="Event 6"
-            />
-          </div>
+      <div class="splide" aria-label="Przykłady">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide" data-label="Ślub">
+              <img src="./images/event-1.jpg" alt="Ślub" />
+            </li>
+            <li class="splide__slide" data-label="Urodziny">
+              <img src="./images/event-2.jpg" alt="Urodziny" />
+            </li>
+            <li class="splide__slide" data-label="Pierwsza Komunia">
+              <img src="./images/event-3.jpg" alt="Pierwsza Komunia" />
+            </li>
+            <li class="splide__slide" data-label="Gender reveal">
+              <img src="./images/event-4.jpg" alt="Gender reveal" />
+            </li>
+            <li class="splide__slide" data-label="Impreza firmowa">
+              <img src="./images/event-5.jpg" alt="Impreza firmowa" />
+            </li>
+            <li class="splide__slide" data-label="Inne wydarzenia">
+              <img src="./images/event-6.jpg" alt="Inne wydarzenia" />
+            </li>
+          </ul>
         </div>
       </div>
     </section>
 
+    <!-- How It Works -->
     <section class="how__works container">
       <h6 class="title--secondary">Proces</h6>
       <h2 class="title--second how__works__title">Jak to działa</h2>
@@ -285,6 +269,7 @@
       </div>
     </section>
 
+    <!-- Benefits -->
     <section class="benefits container">
       <h6 class="title--secondary">Dlaczego warto</h6>
       <h2 class="title--second how__works__title">Więcej niż zwykły obrazek</h2>
@@ -387,6 +372,7 @@
       </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
       <div class="footer__content container">
         <a href="#" class="footer__link" target="_blank"> @MuraKkK </a>
@@ -398,5 +384,8 @@
         </a>
       </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="./js/slider.js"></script>
   </body>
 </html>
