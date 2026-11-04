@@ -14,6 +14,13 @@
   --font-serif: 'Playfair Display', serif;
 }
 
+#events,
+#how-it-works,
+#pricing,
+#why-its-great {
+  scroll-margin-top: 110px;
+}
+
 body {
   background-color: var(--bg-section);
   color: var(--text-main);
@@ -29,7 +36,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .container {
-  max-width: 1320px;
+  max-width: 1450px;
   padding-inline: clamp(20px, 4vw, 60px);
   margin: auto;
 }
@@ -377,6 +384,8 @@ h1, h2, h3, h4, h5, h6,
   padding: 40px 32px 36px;
   text-align: left;
   transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .pricing__card:hover {
@@ -462,6 +471,7 @@ h1, h2, h3, h4, h5, h6,
   font-size: 15px;
   font-weight: 500;
   transition: 0.3s;
+  margin-top: auto;
 }
 
 .pricing__btn:hover {
@@ -481,7 +491,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .pricing__note {
-  margin-top: 28px;
+  margin-top: 40px;
   font-size: 14px;
   color: var(--text-muted);
 }
@@ -519,13 +529,13 @@ h1, h2, h3, h4, h5, h6,
 .footer {
   background-color: var(--text-main);
   color: var(--bg-main);
-  padding-block: 80px;
+  padding-block: 20px;
 
   .footer__content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
   }
 
   .footer__link {
