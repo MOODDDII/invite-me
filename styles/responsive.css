@@ -38,6 +38,7 @@
   .hero,
   .events,
   .how__works,
+  .examples,
   .benefits {
     margin-bottom: 160px;
   }
@@ -174,6 +175,7 @@
 
   .hero,
   .how__works,
+  .examples,
   .benefits {
     margin-bottom: 110px;
   }
@@ -264,6 +266,7 @@
 
   .hero,
   .how__works,
+  .examples,
   .benefits {
     margin-bottom: 80px;
   }
@@ -282,5 +285,11 @@
 
   .footer {
     padding-block: 44px;
+  }
+}
+
+@media (max-width: 900px) {
+  .splide {
+    --shift: 18%;
   }
 }
