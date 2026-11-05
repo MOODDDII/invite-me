@@ -5,13 +5,17 @@ document.addEventListener("DOMContentLoaded", function () {
     focus: "center",
     fixedWidth: "clamp(220px, 26vw, 320px)",
     gap: 0,
+    speed: 280,
+    easing: "cubic-bezier(0.22, 1, 0.36, 1)",
+    pauseOnHover: true,
+    pauseOnFocus: false,
 
     pagination: false,
     arrows: true,
 
     autoplay: true,
-    interval: 5000,
-    pauseOnHover: true,
+    interval: 3000,
+    pauseOnHover: false,
     pauseOnFocus: false,
 
     drag: false,

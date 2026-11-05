@@ -129,7 +129,9 @@
             Tworzę unikalne cyfrowe zaproszenia na śluby, urodziny i inne ważne
             chwile. Z animacją, muzyką i wygodnym potwierdzeniem obecności.
           </p>
-          <a class="hero__button" href="mailto:getmoodyup@gmail.com">Chcę takie zaproszenie</a>
+          <a class="hero__button" href="mailto:getmoodyup@gmail.com"
+            >Chcę takie zaproszenie</a
+          >
         </div>
 
         <div class="hero__right">
@@ -328,104 +330,53 @@
     </section>
 
     <!-- Benefits -->
-    <section class="benefits container">
-      <h6 class="title--secondary" id="why-its-great">Dlaczego warto</h6>
-      <h2 class="title--second how__works__title">Więcej niż zwykły obrazek</h2>
+    <section class="benefits container" id="why-its-great">
+      <h6 class="title--secondary">Dlaczego warto</h6>
+      <h2 class="title--second">Więcej niż zwykły obrazek</h2>
 
-      <div class="benefits__content">
-        <div class="benefits__item">
-          <svg
-            class="benefits__img"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-wallpaper preview-icon"
-          >
-            <path d="M12 17v4" />
-            <path d="M8 21h8" />
-            <path d="m9 17 6.1-6.1a2 2 0 0 1 2.81.01L22 15" />
-            <circle cx="8" cy="9" r="2" />
-            <rect x="2" y="3" width="20" height="14" rx="2" />
-          </svg>
-          <p class="benefits__text">Wygląda świetnie na każdym urządzeniu</p>
-        </div>
-        <div class="benefits__item">
-          <svg
-            class="benefits__img"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-eighth-notes preview-icon"
-          >
-            <path
-              d="M21 16V3a1 1 0 0 0-1.28-.96l-10 2.917a1 1 0 0 0-.72.96V19"
-            />
-            <circle cx="18" cy="16" r="3" />
-            <circle cx="6" cy="19" r="3" />
-          </svg>
-          <p class="benefits__text">Dodajemy subtelne animacje oraz muzykę</p>
-        </div>
-        <div class="benefits__item">
-          <svg
-            class="benefits__img"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-globe-x preview-icon"
-          >
-            <path d="m16 3 5 5" />
-            <path
-              d="M2 12h20A10 10 0 1 1 12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 4-10"
-            />
-            <path d="m21 3-5 5" />
-          </svg>
-          <p class="benefits__text">
-            Goście mogą potwierdzić obecność bezpośrednio w zaproszeniu
+      <div class="benefits__grid">
+        <div class="benefits__card">
+          <div class="benefits__icon">
+            <img class="benefits__img" src="./images/benefits-1.jpg" alt="" />
+          </div>
+          <h3 class="benefits__title">Wygląda świetnie na każdym urządzeniu</h3>
+          <p class="benefits__desc">
+            Responsywny design — idealnie prezentuje się na telefonie, tablecie
+            i komputerze.
           </p>
         </div>
-        <div class="benefits__item">
-          <svg
-            class="benefits__img"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-clipboard-pen-line preview-icon"
-          >
-            <rect width="8" height="4" x="8" y="2" rx="1" />
-            <path
-              d="M8 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-.5"
-            />
-            <path d="M16 4h2a2 2 0 0 1 1.73 1" />
-            <path d="M8 18h1" />
-            <path
-              d="M21.378 12.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"
-            />
-          </svg>
-          <p class="benefits__text">Łatwe zmiany w każdej chwili</p>
+
+        <div class="benefits__card">
+          <div class="benefits__icon">
+            <img class="benefits__img" src="./images/benefits-2.jpg" alt="" />
+          </div>
+          <h3 class="benefits__title">Animacje i muzyka</h3>
+          <p class="benefits__desc">
+            Subtelne animacje oraz muzyka, które budują nastrój jeszcze przed
+            przybyciem gości.
+          </p>
+        </div>
+
+        <div class="benefits__card">
+          <div class="benefits__icon">
+            <img class="benefits__img" src="./images/benefits-3.jpg" alt="" />
+          </div>
+          <h3 class="benefits__title">Potwierdzenie obecności</h3>
+          <p class="benefits__desc">
+            Goście mogą potwierdzić obecność bezpośrednio w zaproszeniu — bez
+            dodatkowych linków.
+          </p>
+        </div>
+
+        <div class="benefits__card">
+          <div class="benefits__icon">
+            <img class="benefits__img" src="./images/benefits-4.jpg" alt="" />
+          </div>
+          <h3 class="benefits__title">Łatwe zmiany</h3>
+          <p class="benefits__desc">
+            Zmieniła się data, miejsce lub treść? Aktualizujemy zaproszenie w
+            kilka minut.
+          </p>
         </div>
       </div>
     </section>
@@ -433,11 +384,22 @@
     <!-- Footer -->
     <footer class="footer" id="contact">
       <div class="footer__content container">
-        <a href="https://t.me/@MuraKkK" class="footer__link" target="_blank">@MuraKkK </a>
+        <a href="https://t.me/@MuraKkK" class="footer__link" target="_blank"
+          >@MuraKkK
+        </a>
 
-        <a href="mailto:getmoodyup@gmail.com" class="footer__link" target="_blank">@mural </a>
+        <a
+          href="mailto:getmoodyup@gmail.com"
+          class="footer__link"
+          target="_blank"
+          >@mural
+        </a>
 
-        <a href="mailto:getmoodyup@gmail.com" class="footer__link" target="_blank">
+        <a
+          href="mailto:getmoodyup@gmail.com"
+          class="footer__link"
+          target="_blank"
+        >
           getmoodyup@gmail.com
         </a>
       </div>
