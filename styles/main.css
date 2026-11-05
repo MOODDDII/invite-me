@@ -286,6 +286,15 @@ h1, h2, h3, h4, h5, h6,
   transform: scale(1.06);
 }
 
+.splide__track {
+  touch-action: pan-y;
+}
+
+.splide__slide img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
 .splide__arrow {
   z-index: 10;
   background: var(--bg-card);
