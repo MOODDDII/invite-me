@@ -219,6 +219,11 @@
       font-size: 19px;
       line-height: 1.4;
     }
+
+    .benefits__img {
+      width: 40px;
+      height: auto;
+    }
   }
 
   .footer {
